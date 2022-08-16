@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+}
+.parte-esquerda{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+.texto h1{
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+}
+.texto p{
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+.parte-direita{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+.topo{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.topo p{
+  margin-top: 2rem;
+  font-size: 15px;
+}
+.topo a{
+  text-decoration: none;
+  color: #6c63ff;
+}
+.input-campos label{
+  font-size: 15px;
+}
+.input-campos input{
+  width: 25rem;
+  padding: 1em;
+  border: none;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  outline: none;
+}
+.submit{
+  width: 25rem;
+  padding: 1em;
+  border: none;
+  background-color: #6c63ff;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+.submit:hover{
+  opacity: 0.9;
+}
+.rodapé p{
+  font-size: 15px;
+  margin-top: 1rem;
+  text-align: center;
+  color: #777;
+}
+.rodapé a{
+  text-decoration: none;
+  color: #6c63ff;
+}
+@media (max-width: 840px) {
+  .parte-esquerda{
+    display: none;
+  }
+  .parte-direita{
+    width: 100%;
+  }
+}
+@media (max-width: 415px) {
+  .input-campos input{
+    width: 18rem;
+  }
+  .submit{
+    width: 18rem;
+  }
+  .rodapé p{
+    font-size: 10px;
+  }
+}
